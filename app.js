@@ -15,7 +15,7 @@ let posts=[];
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/ComposeDB", {
+mongoose.connect("mongodb+srv://admin-ayan:radhaswami@ayans.pb3xa.mongodb.net/ComposeDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
