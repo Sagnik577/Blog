@@ -15,7 +15,7 @@ let posts=[];
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-mongoose.connect(process.env.URL, {
+mongoose.connect("mongodb+srv://admin-ayan:"+process.env.PWD+"@ayans.pb3xa.mongodb.net/ComposeDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
